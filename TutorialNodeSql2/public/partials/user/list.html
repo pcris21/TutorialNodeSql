@@ -1,0 +1,51 @@
+﻿<div class="container" ng-init="listUsers()">
+    <div class="panel panel-default">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table data-toggle="table" class="table table-striped js-GeoResult">
+                        <thead>
+                            <tr>
+                                <th>
+                                    UserId
+                                </th>
+                                <th>
+                                    UserName
+                                </th>
+                                <th>
+                                    UserEmail
+                                </th>
+                                <th>
+                                    UserLevel
+                                </th>
+                                <th>
+                                    UserStatus
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="row in listUser">
+                                <td>
+                                    {{row.UserId}}
+                                </td>
+                                <td>
+                                    {{row.UserName}}
+                                </td>
+                                <td>
+                                    {{row.UserEmail}}
+                                </td>
+                                <td>
+                                    {{row.UserLevel}}
+                                </td>
+                                <td>
+                                    {{row.UserStatus}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                    

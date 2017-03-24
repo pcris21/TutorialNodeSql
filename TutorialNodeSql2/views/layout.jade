@@ -1,0 +1,17 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    script(src='/Import/angular.js')
+    script(src='/Import/angular-route.js')
+    script(src='/Import/angular-resource.js')
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/services.js')
+    script(src='/javascripts/controllers/controller.js')
+    script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+    script(src='/Import/bootstrap.js')
+  body(ng-app="TutorialNodeSql2")
+    div.container
+        div(ng-view)

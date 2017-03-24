@@ -1,0 +1,29 @@
+﻿
+<div class="container">
+    <div class="table">
+        <div>
+            <label>{{$scope.mensagem}}</label>
+        </div>
+        <div class="form-group">
+            <div>
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="text" class="form-control" ng-model="UserEmail" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label>Password</label>
+            </div>
+            <div>
+                <input type="password" class="form-control" ng-model="UserPassword" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <input type="submit" class="btn btn-primary" ng-click="validateLogin();" value="Login" />
+            </div>
+        </div>
+    </div>
+</div>

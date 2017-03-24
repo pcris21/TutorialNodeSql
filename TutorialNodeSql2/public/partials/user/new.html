@@ -1,0 +1,65 @@
+﻿
+<div ng-init="Load()">
+    <div class="container">
+        <div class="table">
+            <div>
+                <label>{{mensagem}}</label>
+            </div>
+            <div class="row col-md-8">
+                <div class="col-sm-2">
+                    <label>Name</label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="UserName" class="form-control" />
+                </div>
+            </div>
+            <div class="row col-md-8">
+                &nbsp;
+            </div>
+            <div class="row col-md-8">
+                <div class="col-sm-2">
+                    <label>Email</label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="UserEmail" ng-change="IsEmail" class="form-control" />
+                </div>
+            </div>
+            <div class="row col-md-8">
+                &nbsp;
+            </div>
+            <div class="row col-md-8">
+                <div class="col-sm-2">
+                    <label>Password</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="password" ng-model="UserPassword" class="form-control" />
+                </div>
+                <div class="col-sm-2">
+                    <label>Level</label>
+                </div>
+                <div class="col-sm-4">
+                    <select class="form-control" ng-model="UserLevel" >
+                        <option ng-repeat="level in arrayLevel" value="{{level.LevelId}}" ng-click="selectItem($event,$element)">
+                            {{level.LevelName}}
+                        </option>
+                    </select>
+                    <label>{{UserLevel}}</label>
+                </div>
+            </div>
+            <div class="row col-md-8">
+                &nbsp;
+            </div>
+            <div class="row col-md-8">
+                <div class="col-sm-8">
+                    &nbsp;
+                </div>
+                <div class="col-sm-2">
+                    <input type="submit" class="btn btn-default" ng-click="newUser()" value="Save" />
+                </div>
+                <div class="col-sm-2">
+                    <input type="button" class="btn btn-default" ng-click="cancelar()" value="Cancelar" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
